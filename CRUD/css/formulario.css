@@ -1,0 +1,141 @@
+/***********************************************************/
+/*               ESTILO DE INSERCCION.HTML                 */
+/*               ÁNGEL DOMÍNGUEZ RUIZ                      */
+/*                                                        */
+/**********************************************************/
+
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/Fondonike.png);
+    background-size: cover;
+    padding: 20px; /* Added padding for breathing space */
+    box-sizing: border-box;
+}
+
+form {
+    width: 80%;
+    margin-top: 50px; /* Adjusted margin for better spacing */
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#datos {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+fieldset {
+    border: 1px solid rgb(0, 191, 255);
+    border-radius: 8px;
+    padding: 20px; /* Increased padding for better spacing */
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px; /* Adjusted padding for consistency */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+a {
+    color: #00a6ff;
+}
+
+.gender-selector {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.gender-selector label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gender-selector input {
+    display: none;
+}
+
+.gender-selector span {
+    margin-top: 5px;
+}
+
+.gender-selector input:checked + span {
+    color: #ffa500;
+}
+
+.error {
+    color: red !important;
+}
+
+/*******RESPONSIVE*********/
+@media only screen and (max-width: 600px) {
+    form {
+        width: 95%;
+        padding: 20px; /* Adjusted padding for better spacing */
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta </title>
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="shortcut icon" href="./img/230307123105-aston-martin-racing-fernando-alonso-deportes-full-169.jpg" type="image/x-icon">
+    
+</head>
+<body>
+    
+    <form id="formulario" action="" method="post">
+
+    <h2>Registrarse</h2>
+    <fieldset>
+        <legend id="datos">Datos personales :</legend>
+   
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="" >
+    <span id="nombreHelp" class="help"></span>
+    <br>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" placeholder="" >
+    <span id="apellidosHelp" class="help"></span>
+    <br>
+
+
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" placeholder="" >
+    <span id="usuarioHelp" class="help"></span>
+    <br>
+
+    <label for="email">Correo electronico:</label>
+    <input type="email" id="email" name="email" >
+    <span id="emailHelp" class="help"></span>
+    <br>
+    <label for="pass">Contraseña:</label>
+    <input type="password" id="pass" name="password" >
+    <span id="passHelp" class="help"></span>
+    <br>
+    
+    <div class="gender-selector">
+        <label>
+            <input type="radio" name="gender" value="male">
+            <span>Hombre</span>
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female">
+            <span>Mujer</span>
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="other">
+            <span>Otro</span>
+        </label>
+        
+    </div>
+    
+    
+    <input type="checkbox" name="terminos" id="terminos" >
+    <label >Aceptos los <a href="">terminos</a>....</label><br>
+    <span id="terminosHelp" class="help"></span>
+    
+    <button type="submit">Enviar</button>
+
+    </fieldset>
+    </form>
+<script src="./js/validacionFormularioInserccion.js"></script>
+</body>
+</html>

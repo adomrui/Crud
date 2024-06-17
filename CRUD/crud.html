@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/crudstyle.css">
+    <link rel="shortcut icon" href="./img/1366_2000.jpeg" type="image/x-icon">
+    <title>Lista</title>
+</head>
+<body>
+    <div id="container">
+        
+<table>
+    <caption>USUARIOS</caption>
+    <tr>
+        <th>Num</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Email</th>
+        <th>Usuario</th>
+        <th>Genero</th>
+        <th>Contraseña</th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td data-label="Num">1</td>
+        <td data-label="Nombre">Ángel</td>
+        <td data-label="Apellidos">Siu</td>
+        <td data-label="Email">angelsiu@gmail.com</td>
+        <td data-label="Usuario">33goat</td>
+        <td data-label="Genero">Hombre</td>
+        <td data-label="Contraseña">12345morenito</td>
+        <td data-label="Acciones"><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></td>
+    </tr>
+    <tr>
+        <td data-label="Num">2</td>
+        <td data-label="Nombre">Comandante</td>
+        <td data-label="Apellidos">Tete</td>
+        <td data-label="Email">comandante77@gmail.com</td>
+        <td data-label="Usuario">Comandante7</td>
+        <td data-label="Genero">Hombre</td>
+        <td data-label="Contraseña">elcomandante45</td>
+        <td data-label="Acciones"><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></td>
+    </tr>
+    <tr>
+        <td data-label="Num">3</td>
+        <td data-label="Nombre">Minita</td>
+        <td data-label="Apellidos">Cariñosa</td>
+        <td data-label="Email">minitacarinosa@gmail.com</td>
+        <td data-label="Usuario">LaRobledo</td>
+        <td data-label="Genero">Mujer</td>
+        <td data-label="Contraseña">quebarbarida33</td>
+        <td data-label="Acciones"><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></td>
+    </tr>
+    <tr>
+        <td data-label="Num">4</td>
+        <td data-label="Nombre">María</td>
+        <td data-label="Apellidos">Poclaro</td>
+        <td data-label="Email">maripo45@gmail.com</td>
+        <td data-label="Usuario">Poclaro</td>
+        <td data-label="Genero">Mujer</td>
+        <td data-label="Contraseña">dabs1plus</td>
+        <td data-label="Acciones"><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></td>
+    </tr>
+    <tr>
+        <td data-label="Num">5</td>
+        <td data-label="Nombre">Asoplaaa</td>
+        <td data-label="Apellidos">Abdalu</td>
+        <td data-label="Email">asoplalosgatos@gmail.com</td>
+        <td data-label="Usuario">Asoplaaaa</td>
+        <td data-label="Genero">Otro</td>
+        <td data-label="Contraseña">vinisius14</td>
+        <td data-label="Acciones"><button class="btn warning">Editar</button><button class="btn danger" onclick="confirmDelete()">Borrar</button></td>
+    </tr>
+</table>
+
+    </div>
+
+    <div id="confirmationDialog" class="confirmation-dialog">
+        <p>¿Está seguro de querer eliminar este usuario?</p>
+        <button class="btn primary" onclick="deleteUser()">Eliminar</button>
+        <button class="btn secondary" onclick="closeDialog()">Cancelar</button>
+    </div>
+
+    <script src="./js/validacionLogin_Listado.js"></script>
+</body>
+</html>
+ 
